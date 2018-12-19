@@ -306,8 +306,8 @@ var Game = function(){
     showPosition();
   };
   function showPosition(){
-      var x = player.x;
-      var y = player.y;
+      var x = (player.x).toFixed(2);
+      var y = (player.y).toFixed(2);
       var dist = Math.sqrt(x*x + y*y);
       var percent = (100 - ratio).toFixed(2);
       this.maxDist = Math.sqrt(minimap.cellsAcross*minimap.cellsAcross + minimap.cellsDown*minimap.cellsDown);
